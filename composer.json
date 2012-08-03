@@ -1,0 +1,25 @@
+{
+    "name":         "sija/smartypants",
+    "type":         "library",
+    "description":  "Smartypants library",
+    "homepage":     "http://github.com/Sija/smartypants",
+    "license":      "MIT",
+    "keywords":     ["smartypants"],
+    "authors": [
+
+    ],
+    "require": {
+        "php": ">=5"
+    },
+    "autoload": {
+        "psr-0": {
+            "Smartypants": "src/"
+        },
+        "classmap": ["vendor/"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
