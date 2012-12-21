@@ -1,7 +1,7 @@
 PHP SmartyPants
 ===============
 
-Version 1.5.1oo - Fri 19 May 2006
+Version 1.5.2
 
 by Michel Fortin
 <http://www.michelf.com/>
@@ -77,75 +77,6 @@ Installation and Requirement
 ----------------------------
 
 PHP SmartyPants require PHP version 4.0.5 or later.
-
-
-### WordPress ###
-
-WordPress already include a filter called "Texturize" with the same 
-goal as SmartyPants. You could still find some usefulness to 
-PHP SmartyPants if you are not happy enough with the standard algorithm.
-
-PHP SmartyPants works with [WordPress][wp], version 1.2 or later.
-
-[wp]: http://wordpress.org/
-
-1.  To use PHP SmartyPants with WordPress, place the "smartypants.php" 
-    file in the "plugins" folder. This folder is hidden inside 
-    "wp-content" at the root of your site:
-
-        (site home)/wp-content/plugins/smartypants.php
-
-2.  Activate the plugin with the administrative interface of WordPress. 
-    In the "Plugins" section you will now find SmartyPants. To activate 
-    the plugin, click on the "Activate" button on the same line than 
-    SmartyPants. Your entries will now be filtered by PHP SmartyPants.
-
-Note: It is not possible at this time to apply a different set of 
-filters to different entries. All your entries will be filtered by 
-PHP SmartyPants if the plugin is active. This is currently a limitation 
-of WordPress.
-
-
-### Blosxom ###
-
-SmartyPants works with Blosxom version 2.0 or later.
-
-1.  Rename the "SmartyPants.pl" plug-in to "SmartyPants" (case is
-    important). Movable Type requires plug-ins to have a ".pl"
-    extension; Blosxom forbids it (at least as of this writing).
-
-2.  Copy the "SmartyPants" plug-in file to your Blosxom plug-ins folder.
-    If you're not sure where your Blosxom plug-ins folder is, see the
-    Blosxom documentation for information.
-
-3.  That's it. The entries in your weblog should now automatically have
-    SmartyPants's default transformations applied.
-
-4.  If you wish to configure SmartyPants's behavior, open the
-    "SmartyPants" plug-in, and edit the value of the `$smartypants_attr`
-    configuration variable, located near the top of the script. The
-    default value is 1; see "Options", below, for the full list of
-    supported values.
-
-
-### In your programs ###
-
-You can use PHP SmartyPants easily in your current PHP program. Simply 
-include the file and then call the `SmartyPants` function on the text 
-you want to convert:
-
-	include_once "smartypants.php";
-	$my_text = SmartyPants($my_text);
-
-
-### With Smarty ###
-
-If your program use the [Smarty][sm] template engine, PHP SmartyPants 
-can now be used as a modifier for your templates. Rename 
-"smartypants.php" to "modifier.smartypants.php" and put it in your 
-smarty plugins folder.
-
-[sm]: http://smarty.php.net/
 
 
 Options and Configuration
